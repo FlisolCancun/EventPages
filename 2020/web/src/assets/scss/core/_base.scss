@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary: #1a1a36;
+}
+
 body {
-    background-color: #2477cd;
+    font-family: 'IBM Plex Sans', sans-serif;
 }

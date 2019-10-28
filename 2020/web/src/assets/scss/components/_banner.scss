@@ -7,17 +7,18 @@
   align-content: center;
   user-select: none;
 
+
   &-logo {
-    width: 250px;
+    width: 150px;
   }
 
   .info {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     font-size: 1.5rem;
     margin: 1rem 0;
     color: #f35626;
-    background-image: linear-gradient(92deg, #f35626 0%,#feab3a 100%);
+    background-image: linear-gradient(92deg, #f35626 0%, #feab3a 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -30,7 +31,7 @@
     font-size: 15vmin;
 
     color: #f35626;
-    background-image: linear-gradient(92deg, #f35626 0%,#feab3a 100%);
+    background-image: linear-gradient(92deg, #f35626 0%, #feab3a 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -42,4 +43,60 @@
     line-height: 1.67;
     margin: 0;
   }
+}
+
+.about-flisol {
+  margin: 3rem 0;
+  display: grid;
+  grid-template-columns: 0.85fr 1fr;
+  grid-gap: 5rem;
+  text-align: justify;
+  color: #fff;
+  background: rgba(#fff, 0.032);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.about-flisol-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: -0.8px;
+  font-weight: 400;
+  color: #f35626;
+  background-image: linear-gradient(92deg, #f35626 0%, #feab3a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-flisol-text {
+  padding: 0.25rem;
+  line-height: 1.8;
+}
+.about-flisol-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 100%;
+  grid-gap: 1rem;
+
+  img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+    &:nth-child(2) {
+      grid-column: 2/-1;
+      grid-row: span 2;
+    }
+  }
+}
+
+.color-accent {
+  color: #f35626;
+  background-image: linear-gradient(92deg, #f35626 0%, #feab3a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

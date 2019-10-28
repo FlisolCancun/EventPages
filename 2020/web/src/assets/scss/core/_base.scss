@@ -9,6 +9,10 @@
 }
 
 body {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: 'Space Mono', monospace;
   background-color: var(--primary);
+}
+
+img {
+  max-width: 100%;
 }

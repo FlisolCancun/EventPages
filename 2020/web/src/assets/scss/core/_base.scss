@@ -1,13 +1,14 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --primary: #1a1a36;
+  --primary: #1a1a36;
 }
 
 body {
-    font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: var(--primary);
 }

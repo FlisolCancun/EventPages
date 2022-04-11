@@ -1,59 +1,29 @@
 <template>
-  <div class="home">
-    <div class="l-section">
+  <fragment>
+    <navbar></navbar>
+    <main>
       <banner></banner>
-    </div>
-    <div class="l-section">
-      <about></about>
-    </div>
-    <div class="l-section">
       <schedule></schedule>
-    </div>
-    <div class="l-section">
-      <footer></footer>
-    </div>
-  </div>
+      <sponsors></sponsors>
+    </main>
+  </fragment>
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
-
-import Banner from "@/components/Banner.vue";
-import About from "@/components/About.vue";
-import Schedule from "@/components/Schedule.vue";
-import Footer from "@/components/Footer.vue";
+import Navbar from "@/components/Navbar";
+import Banner from "@/components/Banner";
+import Sponsors from "@/components/About";
+import Schedule from "@/components/Schedule";
+import Footer from "@/components/Footer";
 
 export default {
   name: "Home",
   components: {
+    Navbar,
     Banner,
-    About,
+    Sponsors,
     Schedule,
     Footer,
   },
 };
 </script>
-<style>
-body {
-  font-family: resist, sans-serif;
-  overflow: hidden;
-}
-
-.l-section {
-  width: 100vw;
-  height: 100vh;
-}
-
-@media screen and (min-width: 1024px) {
-  .works__title {
-    font-size: 5rem;
-  }
-}
-.works__title {
-  margin: 0;
-  font-size: 5rem;
-  font-weight: bold;
-  line-height: 1.75;
-}
-</style>

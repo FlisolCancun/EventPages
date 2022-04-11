@@ -4,11 +4,14 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "deploy": "vue-cli-service build && firebase deploy"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "swiper": "^8.1.0",
     "vue": "^2.6.11",
+    "vue-fragment": "^1.5.2",
     "vue-router": "^3.2.0"
   },
   "devDependencies": {
